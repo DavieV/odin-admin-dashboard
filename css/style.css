@@ -1,0 +1,205 @@
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  --custom-font: 'Roboto', sans-serif;
+
+  --blue: #1992d4;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--custom-font);
+}
+
+main {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+img.large {
+  width: 64px;
+  height: 64px;
+}
+
+/* Sidebar styling */
+
+.sidebar {
+  color: #fff;
+  font-size: 2rem;
+  padding: 32px;
+
+  background-color: var(--blue);
+  grid-row: 1 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 64px;
+}
+
+.sidebar > .group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.sidebar #header {
+  font-size: 2.5rem;
+}
+
+/* Navbar styling */
+
+.nav {
+  background-color: #fff;
+  grid-column: 2 / span 1;
+
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+
+  box-shadow: 2px 5px 5px 0px #d6d1d3;
+  z-index: 1;
+}
+
+.topnav,
+.bottomnav {
+  width: 100%;
+
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.searchbar {
+  width: 600px;
+  height: 32px;
+  background-color: #e2e8f0;
+  border-radius: 16px;
+}
+
+button {
+  color: #fff;
+  background-color: var(--blue);
+  padding: 16px 32px;
+  border-radius: 32px;
+  font-size: 1.5rem;
+}
+
+/* Content styling */
+
+.content {
+  background-color: #e2e8f0;
+  padding: 32px;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+}
+
+.projects {
+  grid-row: 1 / span 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.project-cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.card {
+  background-color: #fff;
+  padding: 16px;
+  font-weight: light;
+  height: 200px;
+  box-shadow: 2px 5px 5px 0px #d6d1d3;
+  border-radius: 16px;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.announcements-card {
+  background-color: #fff;
+  padding: 32px;
+  box-shadow: 2px 5px 5px 0px #d6d1d3;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.announcements-card .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.trending-card {
+  background-color: #fff;
+  padding: 32px;
+  box-shadow: 2px 5px 5px 0px #d6d1d3;
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heading {
+  font-size: 2rem;
+}
